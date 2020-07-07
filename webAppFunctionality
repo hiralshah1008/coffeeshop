@@ -1,0 +1,30 @@
+Coffeeshop Web App functionality.
+The Web App has following pages. currently, every page is accessible publicly.
+•	Shop listing page
+•	Shop menu display page
+•	Add Shop page
+•	Add Menu Item to the shop page
+
+Note:
+This all can be done with relative path but for now I have used absolute path as I have not considered creating config for setting base url and referring from there. 
+Having said that I know how to do that as well.
+
+Shop Listing Page:
+•	3 recently added shop will be displayed on the home page under “Your favorite café” section of home page
+•	All shop listing is available here, http://localhost/coffeeshop/public/listAllShop; you can navigate here from the button provided beneath  “Your favorite café” section of home page
+•	Listing page has the functionality to filter the shop by Shop status (this filtering works on chosen shop open hours, while adding the shop. If current time falls under the open hours range the shop card will be visible under Open Now status otherwise under closed status.)
+•	This page is fetching data from API endpoint; to access direct result visit, http://localhost/coffeeshop/public/getAllShop/{$limit}/{$sortBy}/{$status}
+•	Filter has been provided to sort shop Name by ascending and descending order.
+
+Shop Menu Display Page:
+•	It shows menu item category wise and it also display’s ingredient and item description for the same.
+Add Shop:
+•	To add shop, visit http://localhost/coffeeshop/public/addShop.
+•	Links is available on top navigation bar.
+Add Menu Item:
+•	To add Menu Item, click on the add Menu item link under shop detail page 
+•	Please note that the option for menu item category and ingredient is fetched from database dynamically and listed in dropdown 
+
+I have also uploaded script for creating database for this application in git repository under coffeeshop.sql
+
+
